@@ -42,6 +42,8 @@ public class DatePOJO implements Serializable{
 		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");		
 		try {
 			this.date = format.parse(textDate);
+			ConvertDateAndLocalDate convert = new ConvertDateAndLocalDate() ;
+			localDate = convert.convertDateToLocalDate(this.date);
 		} catch (ParseException e) {
 			System.out.println(" INVALID FORMAT OR DATE : Error encountered while PARSING\n");
 			e.printStackTrace();
