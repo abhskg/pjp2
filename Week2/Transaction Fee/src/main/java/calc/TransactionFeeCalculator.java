@@ -1,4 +1,4 @@
-package main.java;
+package main.java.calc;
 
 import java.util.List;
 import java.util.Scanner;
@@ -15,10 +15,13 @@ public class TransactionFeeCalculator {
 		Scanner read = new Scanner(System.in);
 
 		System.out.println("Write Input File name : "); 	
-		String inputFile = read.nextLine();
+		String inputFile = "C:\\Users\\Abhas\\Pictures\\PS PJP2\\PS	 GIT Point\\test\\Sample_Data_Fee_Calculator.csv";
+//		String inputFile = read.nextLine();
 
-		System.out.println("Write Output File name : ");	
-		String outputFile = read.nextLine();
+		
+		System.out.println("Write Output File name : ");
+		String outputFile = "C:\\Users\\Abhas\\Pictures\\PS PJP2\\PS GIT Point\\test\\output.csv";
+//		String outputFile = read.nextLine();
 
 		List<Transaction> transactions = CsvIO.readCSV(inputFile);
 		transactions = TransactionProcessor.process(transactions);

@@ -18,10 +18,8 @@ import main.java.basic.Transaction;
 
 public class CsvIO {
 
-	
 	private static final String CSV_DELIMITER = ",";
 	
-
 	private static Function<String, Transaction> csvScanner = (line) -> {
 		String[] row = line.split(",");
 		Transaction transaction = new Transaction();
