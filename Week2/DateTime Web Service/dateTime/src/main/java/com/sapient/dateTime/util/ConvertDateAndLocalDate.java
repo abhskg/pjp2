@@ -1,10 +1,12 @@
-package com.sapient.util;
+package com.sapient.dateTime.util;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class ConvertDateAndLocalDate {
 	
 	public LocalDate convertDateToLocalDate( Date date ) {

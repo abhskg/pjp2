@@ -1,4 +1,4 @@
-package com.sapient.util;
+package com.sapient.dateTime.util;
 
 import java.io.Serializable;
 import java.text.ParseException;
@@ -6,7 +6,9 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class DatePOJO implements Serializable{
 
 //	Default Serial Version ID

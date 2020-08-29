@@ -4,8 +4,6 @@ import java.util.List;
 import java.util.Scanner;
 
 import main.java.basic.Transaction;
-import main.java.calc.OrganiseTransactions;
-import main.java.calc.TransactionProcessor;
 import main.java.util.CsvIO;
 
 public class TransactionFeeCalculator {
@@ -24,7 +22,7 @@ public class TransactionFeeCalculator {
 //		String outputFile = read.nextLine();
 
 		List<Transaction> transactions = CsvIO.readCSV(inputFile);
-		transactions = TransactionProcessor.process(transactions);
+		transactions = TransactionProcess.process(transactions);
 
 		List<Transaction> groupedTransactions = OrganiseTransactions.group(transactions);
 		CsvIO.writeCSV(groupedTransactions, outputFile);

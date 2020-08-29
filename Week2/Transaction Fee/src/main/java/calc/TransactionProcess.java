@@ -7,7 +7,7 @@ import java.util.Map;
 
 import main.java.basic.Transaction;
 
-public class TransactionProcessor {
+public class TransactionProcess {
 
 	public static List<Transaction> process(List<Transaction> transactions) {
 

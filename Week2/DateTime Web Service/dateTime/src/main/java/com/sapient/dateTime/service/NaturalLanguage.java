@@ -1,11 +1,13 @@
-package com.sapient.service;
+package com.sapient.dateTime.service;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.springframework.stereotype.Service;
 
-import com.sapient.util.DatePOJO;
+import com.sapient.dateTime.util.DatePOJO;
 
+@Service
 public class NaturalLanguage extends DateTimeService{
 	
 	public NaturalLanguage() {

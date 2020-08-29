@@ -11,7 +11,6 @@ public class DateTimeCalculator {
 	
 	static DateTimeService service ; 
 	
-	DateTimeUI dateTimeMenu;
 	
 	
 	public static void main(String[] args) {
