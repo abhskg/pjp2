@@ -3,11 +3,6 @@
 
 <!--  <%@ include file="common/navigation.jsp"%>-->
 
-<c:set var="theLocale" value="${not empty param.theLocale?param.theLocale:pageConext.request.Locale }"
-  scope="session" />
-<fmt:setLocale value="${theLocale}" />
-<fmt:setBundle basename="com.sapient.i18n.home"/>
-
 
   <div class="lang_select">
     <p class="lang-txt">Display Language</p>
