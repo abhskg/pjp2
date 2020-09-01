@@ -1,6 +1,7 @@
 
 <%@ include file="common/header.jsp"%>
 
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!--  <%@ include file="common/navigation.jsp"%>-->
 
 
@@ -14,7 +15,7 @@
   </div>
   
 
-  <form action="selection" method="get">
+  <form action="/selection" method="get">
 	<div>
 		<fmt:message key="label.message" />		
 	</div>

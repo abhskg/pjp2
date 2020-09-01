@@ -2,12 +2,10 @@
 
 <!--  <%@ include file="common/navigation.jsp"%>-->
 
-
-
   <h3>Add N Days to an Input Date</h3>
   <form action="add" method="GET">
     <label for="date_add">Input Date:- </label>
-    <input id="date_add" name="date" type="date" required> <br>
+    <input id="date_add" name="date_add" type="date" required> <br>
     <label for="numOfDays_add">Number of Days to be Added:- </label>
     <input id="numOfDays_add" name="numOfDays" type="number" required><br>
     <input type="submit">    
@@ -33,8 +31,5 @@
       <input type="submit">    
     </form>
     <h4>Result:- </h4>
-
-
-
 
 <%@ include file="common/footer.jsp"%>
