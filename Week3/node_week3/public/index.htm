@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date Calculator Service</title>
+	
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<center>
+    <h1>Date Calculator</h1>
+
+    <table >
+        <form name="myForm" class="form-group">
+    	<tr>
+            <td><label for="date1">Date1:</label></td>
+    	    <td><input class ="date1" type="text" name="date1" placeholder=" dd / MM / yyyy"></td>
+        </tr>
+        <tr>
+    	   <td><label for="date2">Date2:</label></td>
+    	   <td><input type="text" name="date2" placeholder=" dd / MM / yyyy "/></td>
+        </tr>
+    	<tr>
+    	   <td><label for="n">N:</label></td>
+    	   <td><input type="text" name="n" placeholder="0" /></td>
+        </tr>
+        <tr>	
+           <td><label for="myOption">Option:</label></td>
+    	   <td><select id="myOption" >
+               <option>Add days</option>
+               <option>Minus days</option>
+                <option disabled>---------</option>
+            	<option>Add months</option>
+            	<option>Minus months</option>
+                <option disabled>---------</option>
+            	<option>Add Weeks</option>
+            	<option>Minus Weeks</option>
+                <option disabled>---------</option>
+            	<option>Add years</option>    	
+            	<option>Minus years</option>  
+                <option disabled>---------</option>
+
+            	<option>Difference between dates</option>
+                <option disabled>---------</option>
+
+            	<option>Day of the week</option>
+                <option disabled>---------</option>
+            	<option>Week of the year</option>
+                <option disabled>---------</option>
+
+            	<option>N weeks earlier</option>    	
+            	<option>N months earlier</option>
+            	<option>N years earlier</option>
+
+            	<option>N weeks later</option>    	
+            	<option>N months later</option>
+            	<option>N years later</option>
+                <option disabled>---------</option>
+                <option >Tomorrow</option>
+                <option>Yesterday</option>
+                <option>Day-after tomorrow</option>
+                <option>Day-before yesterday</option>
+                <option disabled>---------</option>
+                 <option>Last Week</option>
+                 <option>Next Week</option>
+                 <option>Last month</option>    	
+                 <option>Next month</option>    	
+                 <option>Last year</option>
+                 <option>Next year</option>
+            </select></td>
+        </tr>
+    </table>
+    <br>
+
+    <input class="btn-success" type="button" name="button" value="submit" id = "submit" onclick="formSubmit(this.form)"></form>
+
+    <br>
+    <h3>Result :
+        <input type="text" name="result" id="result">
+    </h3>
+</center>
+
+<script type="text/javascript" src="js/form-submit.js"></script>
+<script type="text/javascript" src="js/date-time-buss-logic.js"></script>
+
+</body>
+</html>
